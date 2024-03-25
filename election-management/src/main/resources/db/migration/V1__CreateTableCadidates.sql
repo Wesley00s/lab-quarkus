@@ -1,0 +1,13 @@
+CREATE TABLE Candidates
+(
+    id          VARCHAR(255) NOT NULL,
+    photo       VARCHAR(255) DEFAULT NULL,
+    given_name  VARCHAR(255) NOT NULL,
+    family_name VARCHAR(255) NOT NULL,
+    email       VARCHAR(255) NOT NULL,
+    phone       VARCHAR(255) DEFAULT NULL,
+    job_title   VARCHAR(255) DEFAULT NULL,
+    created_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at  DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    CONSTRAINT pk_candidates PRIMARY KEY (id)
+);

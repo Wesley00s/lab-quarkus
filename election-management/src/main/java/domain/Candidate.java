@@ -2,6 +2,7 @@ package domain;
 
 import java.util.Optional;
 
+
 public record Candidate(String id,
                         Optional<String> photo,
                         String giveName,
