@@ -1,6 +1,5 @@
-import domain.Candidate;
-import domain.CandidateRepository;
-import domain.CandidateService;
+package domain;
+
 import io.quarkus.test.junit.QuarkusTest;
 import io.quarkus.test.junit.mockito.InjectMock;
 import org.instancio.Instancio;
