@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.*;
 
 @QuarkusTest
-public class CandidateServiceTest {
+public class CandidateOutEntityServiceTest {
     @Inject
     CandidateService service;
     @InjectMock
@@ -56,6 +56,7 @@ public class CandidateServiceTest {
 
         assertEquals(candidate, result);
     }
+
     @Test
     void findById_WhenCandidateIsNotFoundThrowsException() {
         Candidate candidate = Instancio.create(Candidate.class);
