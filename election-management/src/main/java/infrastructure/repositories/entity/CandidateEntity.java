@@ -17,7 +17,7 @@ import java.util.Optional;
 @AllArgsConstructor
 
 @Entity
-@Table(name = "Candidates")
+@Table(name = "Candidate")
 public class CandidateEntity {
     @Id
     private String id;

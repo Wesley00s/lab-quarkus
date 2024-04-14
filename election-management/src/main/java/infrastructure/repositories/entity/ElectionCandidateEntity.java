@@ -10,7 +10,7 @@ import javax.persistence.Entity;
 
 @Getter
 @Setter
-@Entity(name = "Elections_candidate")
+@Entity(name = "Election_candidate")
 public class ElectionCandidateEntity {
     @EmbeddedId
     private ElectionCandidateId id;

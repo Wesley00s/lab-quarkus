@@ -5,7 +5,7 @@ import domain.Candidate;
 
 import java.util.Optional;
 
-@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonInclude(JsonInclude.Include.NON_EMPTY)
 public record CandidateOut(
         String id,
         Optional<String> photo,

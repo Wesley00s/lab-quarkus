@@ -13,7 +13,7 @@ import javax.persistence.Id;
 @NoArgsConstructor
 @Getter
 @Setter
-@Entity(name = "Elections")
+@Entity(name = "Election")
 public class ElectionEntity {
     @Id
     private String id;

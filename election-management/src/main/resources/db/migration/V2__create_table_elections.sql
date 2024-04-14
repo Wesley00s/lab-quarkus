@@ -1,18 +1,18 @@
-CREATE TABLE Elections (
+CREATE TABLE Election (
     id VARCHAR(40) NOT NULL,
     create_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     update_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     CONSTRAINT pk_elections PRIMARY KEY (id)
 );
 
-CREATE TABLE Elections_candidate (
+CREATE TABLE Election_candidate (
     election_id VARCHAR(40) NOT NULL,
     candidate_id VARCHAR(40) NOT NULL,
     votes INTEGER DEFAULT 0,
     CONSTRAINT pk_elections_candidate PRIMARY KEY (election_id, candidate_id)
 );
 
-INSERT INTO Candidates (id, photo, given_name, family_name, email, phone, job_title) VALUES
+INSERT INTO Candidate (id, photo, given_name, family_name, email, phone, job_title) VALUES
 ('mnopqrst-uvwx-1234-5678-90abcdef1234', 'https://robohash.org/mno.png', 'Mason', 'Jones', 'alexander.wang@example.com', '9876543-2109', 'Software Engineer'),
 ('34567890-abcd-ef12-3456-7890abcdef123', 'https://robohash.org/vwx.png', 'Liam', 'Miller', 'alexander.wang@example.com', '3456789-0123', 'Project Manager'),
 ('23456789-0abc-def1-2345-67890abcdef12', 'https://robohash.org/pqr.png', 'Liam', 'Davis', 'michael.nguyen@example.com', '8901234-5678', 'Data Analyst'),

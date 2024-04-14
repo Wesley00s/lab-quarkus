@@ -1,4 +1,4 @@
-CREATE TABLE Candidates (
+CREATE TABLE Candidate (
     id          VARCHAR(255) NOT NULL,
     photo       VARCHAR(255) DEFAULT NULL,
     given_name  VARCHAR(255) NOT NULL,
@@ -8,6 +8,6 @@ CREATE TABLE Candidates (
     job_title   VARCHAR(255) DEFAULT NULL,
     created_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    CONSTRAINT  pk_candidates PRIMARY KEY (id)
+    CONSTRAINT  pk_candidate PRIMARY KEY (id)
 );
 
